@@ -1,0 +1,71 @@
+body {
+
+    width: 100%;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    height: 80px; /* Altura ajustada para tornar mais compacto */
+    background-color: rgb(0, 0, 50);
+    border-bottom: 2px solid red;
+    justify-content: space-between;
+    align-items: center; /* Centralizar verticalmente */
+    padding: 20px;
+}
+
+/* Estilos para a lista de navegação */
+ul {
+    display: flex;
+    flex-direction: row; /* Alterado para linha para economizar espaço */
+    gap: 15px;
+    list-style: none; /* Remover os pontos de lista */
+    margin: 20; /* Removido o espaçamento padrão */
+    padding: 10; /* Removido o espaçamento padrão */
+}
+
+/* Estilos para cada item da lista de navegação */
+li {
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/* Estilos para o logotipo */
+.logo {
+    width: 60px;
+    height: 60px;
+    color: aliceblue;
+    margin: 0; /* Removido o espaçamento superior e inferior */
+}
+
+/* Estilos para os links de navegação */
+.nav-link {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s; /* Adicionar uma transição suave de cor */
+}
+
+.nav-link:hover {
+    color: red; /* Nova cor quando o mouse passa por cima do link */
+}
+
+/* Media query para dispositivos com largura de tela menor ou igual a 768px */
+@media (max-width: 768px) {
+    .nav {
+        height: auto; /* Altura automática para acomodar conteúdo extra */
+        flex-direction: column; /* Alterado para empilhar em dispositivos menores */
+        align-items: flex-start; /* Alinhado à esquerda em dispositivos menores */
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Adicionado espaçamento inferior para o logotipo */
+    }
+
+    ul {
+        flex-direction: column; /* Alterado para empilhar em dispositivos menores */
+        justify-content: flex-start; /* Alinhado ao início em dispositivos menores */
+    }
+}
+
+
+

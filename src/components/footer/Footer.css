@@ -1,0 +1,25 @@
+/* Estilos básicos do footer */
+footer {
+    background-color: rgb(0, 0, 50);
+    color: white;
+    border-top: 2px solid red;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para o texto dos direitos autorais */
+footer p {
+    margin: 0;
+}
+
+/* Media query para dispositivos com largura de tela menor ou igual a 768px */
+@media (max-width: 768px) {
+    /* Ajustes de estilo para tornar o footer responsivo em telas menores */
+    footer {
+        padding: 10px 0;
+    }
+}
+

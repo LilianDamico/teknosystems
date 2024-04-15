@@ -1,0 +1,75 @@
+.container2 {
+    box-sizing: border-box;
+    width: 100;
+    height: 650vh;
+    background-image: url('../../assets/image/textura.jpg');
+    margin: 10px ;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.title-about {
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.clientes {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.framez {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.pro {
+    display: flex;
+    width: 270px;
+    border-radius: 6px;
+}
+
+/* Adicionando media queries para responsividade */
+
+@media screen and (max-width: 1200px) {
+    .conteudo {
+        grid-template-columns: 150px 250px 400px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .conteudo {
+        grid-template-columns: 100px 200px 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .conteudo {
+        grid-template-columns: 100%;
+    }
+    .title-about {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title-about {
+        font-size: 20px;
+    }
+
+    /* Ajuste para evitar sobreposição */
+    .framez {
+        flex-direction: column;
+        align-items: center;
+    }
+}
