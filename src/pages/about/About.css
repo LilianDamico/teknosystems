@@ -1,75 +1,43 @@
 .container2 {
     box-sizing: border-box;
-    width: 100;
-    height: 650vh;
+    width: 100%;
+    padding: 20px; /* Adicionado padding para espaçamento interno */
+    margin: 10px auto; /* Centraliza o conteúdo horizontalmente */
     background-image: url('../../assets/image/textura.jpg');
-    margin: 10px ;
-}
-
-.conteudo {
-    display: grid;
-    grid-template-columns: 50% 50%;
 }
 
 .title-about {
     display: flex;
     font-size: 35px;
     align-items: center;
-    padding: 20px;
-    margin: 20px;
     justify-content: center;
+    margin-bottom: 20px; /* Adicionado espaçamento inferior */
 }
 
-.clientes {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-}
-
-.framez {
+.conteudo {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
+    flex-wrap: wrap; /* Permite que os elementos sejam distribuídos em várias linhas */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    gap: 20px; /* Espaçamento entre os cards */
 }
 
-.pro {
-    display: flex;
-    width: 270px;
-    border-radius: 6px;
+.frame-a,
+.frame-b,
+.frame-c,
+.frame-d {
+    flex: 1 1 calc(50% - 20px); /* Define a largura dos cards */
+    max-width: calc(50% - 20px); /* Define a largura máxima dos cards */
+    box-sizing: border-box; /* Considera a largura do padding e da borda no cálculo da largura */
 }
 
 /* Adicionando media queries para responsividade */
-
-@media screen and (max-width: 1200px) {
-    .conteudo {
-        grid-template-columns: 150px 250px 400px;
+@media screen and (max-width: 768px) {
+    .frame-a,
+    .frame-b,
+    .frame-c,
+    .frame-d {
+        flex-basis: calc(100% - 20px); /* Define a largura dos cards para telas menores */
+        max-width: calc(100% - 20px); /* Largura máxima dos cards */
     }
 }
 
-@media screen and (max-width: 900px) {
-    .conteudo {
-        grid-template-columns: 100px 200px 300px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .conteudo {
-        grid-template-columns: 100%;
-    }
-    .title-about {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .title-about {
-        font-size: 20px;
-    }
-
-    /* Ajuste para evitar sobreposição */
-    .framez {
-        flex-direction: column;
-        align-items: center;
-    }
-}

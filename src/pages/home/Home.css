@@ -1,10 +1,8 @@
 .container-home {
     width: 100%;
-    height: 120vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 40% 45%;
-    flex-direction: row;
-    justify-content: space-between;
     background-image: url('../../assets/image/planeta-terra.jpg');
     background-size: cover; 
     background-position: center;
@@ -15,29 +13,33 @@
 
 .frame1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
-    width: 360px;
-    height: 65vh;
+    max-width: 360px;
+    width: 90%;
+    min-height: 65vh;
     border: 1px solid red;
-    margin: 30px;
+    margin: 30px auto;
     padding: 20px;
     border-radius: 8px;
-    background-color: rgb(0, 0, 50);
+    background-color: rgba(0, 0, 50, 0.8); /* Ajustado o valor do canal alfa para 0.8 para permitir que o background seja visível */
     color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    overflow: auto;
 }
-.frame2{
+
+.frame2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 15px;
-    width: 350px;
-    height: 35vh;
+    max-width: 350px;
+    width: 90%;
+    min-height: 35vh;
     border: 1px solid red;
     padding: 20px;
-    margin: 30px;
+    margin: 30px auto;
     margin-right: 50px;
-    background-color: rgb(0, 0, 50);
+    background-color: rgba(0, 0, 50, 0.8);
     color: white;
     border-radius: 8px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
@@ -45,15 +47,16 @@
 
 .frame3 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 15px;
-    width: 310px;
-    height: 45vh;
+    max-width: 310px;
+    width: 90%;
+    min-height: 45vh;
     border: 1px solid red;
     padding: 20px;
-    margin: 30px;
+    margin: 30px auto;
     margin-right: 50px;
-    background-color: rgb(0, 0, 50);
+    background-color: rgba(0, 0, 50, 0.8);
     color: white;
     border-radius: 8px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
@@ -61,13 +64,14 @@
 
 .frame4 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 15px;
-    width: 310px;
-    height: 10vh;
+    max-width: 310px;
+    width: 90%;
+    min-height: 10vh;
     border: 3px solid red;
     padding: 20px;
-    margin: 30px;
+    margin: 30px auto;
     margin-right: 50px;
     background-color: white;
     color: rgb(0, 0, 50);
@@ -79,19 +83,34 @@
 .frame5 {
     display: flex;
     flex-direction: column;
-    width: 370px;
-    height: 20vhvh;
+    max-width: 370px;
+    width: 90%;
+    min-height: 20vh;
     border: 1px solid red;
     padding: 20px;
     margin-bottom: 70px;
     margin-right: 50px;
-    background-color: rgb(0, 0, 50);
+    background-color: rgba(0, 0, 50, 0.8);
     color: white;
     border-radius: 8px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .container-home {
+        grid-template-columns: 1fr;
+    }
+    .frame1,
+    .frame2,
+    .frame3,
+    .frame4,
+    .frame5 {
+        width: 90%;
+        margin: 20px auto;
+    }
 }
 

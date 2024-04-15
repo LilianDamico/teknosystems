@@ -8,14 +8,16 @@ function Login() {
     <div>
     <Head />
     <div className='login-box'>
+    <h2>Login</h2>
       <form className='login' action="/pagina-processa-dados-do-form" method="post">
-        <div className='framex'>
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" />
-        </div>
+        
         <div className='framex'>
           <label for="email">E-mail:</label>
           <input type="email" id="email" />
+        </div>
+        <div className='framex'>
+          <label for="nome">Senha</label>
+          <input type="password" id="password" />
         </div>
         <button type='submit'>Enviar</button>
       </form>

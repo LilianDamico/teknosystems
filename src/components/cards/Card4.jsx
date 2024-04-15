@@ -1,5 +1,10 @@
 import React from 'react';
 import './Card.css';
+import Anderson from '../../assets/image/Anderson.jpg';
+import Enzo from '../../assets/image/Enzo.jpg';
+import Higor from '../../assets/image/Higor.jpg';
+import Robson from '../../assets/image/Robson.jpg';
+import Lilian from '../../assets/image/Lilian.jpg'
 
 function Card4() {
   return (
@@ -7,20 +12,25 @@ function Card4() {
       <h3>Conheça Nossa Equipe!</h3>
       <div>
         <p>
-          Enzo Warner
+          Enzo Warner - Scrum Master
         </p>
+        <img src={Enzo} alt="Enzo" />
         <p>
-          Anderson Tomé
+          Anderson Tomé - Engenharia de Softwarre
         </p>
+        <img src={Anderson} alt="Anderson" />
         <p>
-          Robson Gomes
+          Robson Gomes - Arquitetura de Redes
         </p>
+        <img src={Robson} alt="Robson" />
         <p>
-          Higor Felipo
+          Higor Felipo - Marketing Digital
         </p>
+        <img src={Higor} alt="Higor" />
         <p>
-          Lilian Fonseca
+          Lilian Fonseca - Full Stack Developer
         </p>
+        <img src={Lilian} alt="Lilian" />
       </div>
       
     </div>
