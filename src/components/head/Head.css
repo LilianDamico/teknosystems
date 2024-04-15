@@ -5,7 +5,7 @@ body {
 .nav {
     display: flex;
     flex-direction: row;
-    height: 80px; /* Altura ajustada para tornar mais compacto */
+    height: 100px; /* Altura ajustada para tornar mais compacto */
     background-color: rgb(0, 0, 50);
     border-bottom: 2px solid red;
     justify-content: space-between;
@@ -32,10 +32,18 @@ li {
 
 /* Estilos para o logotipo */
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 100px;
     color: aliceblue;
-    margin: 0; /* Removido o espaçamento superior e inferior */
+    margin: 10px; 
+    border-radius: 10px;
+    align-items: center;
+}
+
+.logo img {
+    display: flex;
+    width: 140px;
+    border-radius: 3px;
 }
 
 /* Estilos para os links de navegação */

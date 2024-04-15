@@ -21,6 +21,15 @@ const Home = () => {
             forma ágil e confiável.
           </p>
         </div>
+        <div class="container">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
         <div className='frame2'>
           <h3>Você sabe o que é Gamificação?</h3>
           <p>
@@ -30,6 +39,7 @@ const Home = () => {
             atividades específicas.
           </p>
         </div>
+        
         <div className='frame4'>
           <h2>Você está conectado?</h2>
         </div>

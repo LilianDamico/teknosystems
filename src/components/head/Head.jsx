@@ -2,12 +2,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Head.css';
+import logo1 from '../../assets/icons/logo1.png'
 
 function Head() {
   return (
     <div className='nav'>
       <div className='logo'>
-          <h5>Aqui vai o logo</h5>
+          <div><img src={logo1} alt="logo1" /> </div>
       </div>
       <ul>
           <li>

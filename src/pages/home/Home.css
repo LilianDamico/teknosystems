@@ -2,102 +2,127 @@
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 40% 45%;
+    grid-template-columns: 30% 30% 40%;
     background-image: url('../../assets/image/planeta-terra.jpg');
     background-size: cover; 
     background-position: center;
     background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 20px solid black;
     margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    min-height: 10vh;
+    border: 1px solid red;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 50, 0.8);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .frame1 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     max-width: 360px;
-    width: 90%;
-    min-height: 65vh;
-    border: 1px solid red;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 50, 0.8); /* Ajustado o valor do canal alfa para 0.8 para permitir que o background seja visível */
-    color: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-    overflow: auto;
 }
 
 .frame2 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     max-width: 350px;
-    width: 90%;
-    min-height: 35vh;
-    border: 1px solid red;
-    padding: 20px;
-    margin: 30px auto;
-    margin-right: 50px;
-    background-color: rgba(0, 0, 50, 0.8);
-    color: white;
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    margin-right: 350px;
 }
 
 .frame3 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     max-width: 310px;
-    width: 90%;
-    min-height: 45vh;
-    border: 1px solid red;
-    padding: 20px;
-    margin: 30px auto;
     margin-right: 50px;
-    background-color: rgba(0, 0, 50, 0.8);
-    color: white;
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .frame4 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 310px;
-    width: 90%;
-    min-height: 10vh;
-    border: 3px solid red;
-    padding: 20px;
-    margin: 30px auto;
+    max-width: 250px;
     margin-right: 50px;
+    border: 3px solid red;
     background-color: white;
     color: rgb(0, 0, 50);
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     font-size: 20px;
 }
 
 .frame5 {
-    display: flex;
-    flex-direction: column;
     max-width: 370px;
-    width: 90%;
-    min-height: 20vh;
-    border: 1px solid red;
-    padding: 20px;
     margin-bottom: 70px;
     margin-right: 50px;
-    background-color: rgba(0, 0, 50, 0.8);
-    color: white;
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 p {
     font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+
+.container {
+    width: 200px;
+    height: 100px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.ball {
+    width: 10px;
+    height: 10px;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+
+.ball:nth-child(1),
+.ball:nth-child(3),
+.ball:nth-child(5),
+.ball:nth-child(7) {
+    background: #ffffff;
+    animation: right 2s infinite ease-in-out;
+}
+
+.ball:nth-child(2),
+.ball:nth-child(4),
+.ball:nth-child(6) {
+    background: rgb(100, 15, 15);
+    animation: left 2.1s infinite ease-in-out;
+}
+
+@keyframes right {
+    0% {
+        transform: translate(-15px);
+    }
+    50% {
+        transform: translate(15px);
+    }
+    100% {
+        transform: translate(-15px);
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translate(15px);
+    }
+    50% {
+        transform: translate(-15px);
+    }
+    100% {
+        transform: translate(15px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -113,4 +138,3 @@ p {
         margin: 20px auto;
     }
 }
-
