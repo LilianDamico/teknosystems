@@ -30,6 +30,15 @@
     box-sizing: border-box; /* Considera a largura do padding e da borda no cálculo da largura */
 }
 
+.gamificacao {
+    display: block;
+    width: 33.333%;
+    height: 250px;
+}
+.gamificacao p {
+    font-weight: 200;
+}
+
 /* Adicionando media queries para responsividade */
 @media screen and (max-width: 768px) {
     .frame-a,

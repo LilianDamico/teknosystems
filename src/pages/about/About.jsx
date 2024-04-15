@@ -14,7 +14,7 @@ const About = () => {
       <h2 className='title-about'>Nossa História</h2>
       <div className='conteudo'>
         <div className='frame-a'><Card4 /></div>
-        <div className='segundo'>
+        <div className='gamificacao'>
         <h3>Nosso Destaque: Gamificação.</h3>
         <p>
             Gamificação é a aplicação de elementos

@@ -17,11 +17,10 @@
     margin: 10px;
     padding: 10px;
     font-weight: 500;
-    overflow: auto;
 }
 
-h3 {
-    font-size: 24px;
+.title {
+    font-size: 30px;
     padding: 5px;
     margin: 0;
 }

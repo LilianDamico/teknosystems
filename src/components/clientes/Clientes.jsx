@@ -16,7 +16,7 @@ import Localiza from '../../assets/image/Localiza.png';
 function Clientes() {
   return (
     <div className='clientes'>
-      <h3>Nossos Clientes:</h3>
+      <h3 className='title'>Nossos Clientes:</h3>
       <div className='promec'>
         <img className='promec1' src={Promec1} alt="Promec" />  
         <div className='info'>

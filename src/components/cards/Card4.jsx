@@ -16,7 +16,7 @@ function Card4() {
         </p>
         <img src={Enzo} alt="Enzo" />
         <p>
-          Anderson Tomé - Engenharia de Softwarre
+          Anderson Tomé - Engenharia de Software
         </p>
         <img src={Anderson} alt="Anderson" />
         <p>
