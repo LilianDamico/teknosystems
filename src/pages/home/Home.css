@@ -97,7 +97,7 @@ body {
 .ball:nth-child(2),
 .ball:nth-child(4),
 .ball:nth-child(6) {
-    background: rgb(100, 15, 15);
+    background: #ffffff;
     animation: left 2.1s infinite ease-in-out;
 }
 
