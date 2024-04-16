@@ -48,5 +48,10 @@
         flex-basis: calc(100% - 20px); /* Define a largura dos cards para telas menores */
         max-width: calc(100% - 20px); /* Largura máxima dos cards */
     }
+
+    .gamificacao {
+        width: 100%; /* Define a largura do elemento gamificação para 100% em telas menores */
+        height: auto; /* Ajusta a altura automaticamente baseado no conteúdo interno */
+    }
 }
 
